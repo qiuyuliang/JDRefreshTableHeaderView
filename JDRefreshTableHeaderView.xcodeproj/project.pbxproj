@@ -12,6 +12,10 @@
 		4AFB9AE21AAC07B90015E273 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AFB9AE11AAC07B90015E273 /* Images.xcassets */; };
 		4AFB9AE51AAC07B90015E273 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AFB9AE31AAC07B90015E273 /* LaunchScreen.xib */; };
 		4AFB9AF11AAC07B90015E273 /* JDRefreshTableHeaderViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AFB9AF01AAC07B90015E273 /* JDRefreshTableHeaderViewTests.m */; };
+		4AFB9AFE1AAC080E0015E273 /* EGORefreshTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AFB9AFD1AAC080E0015E273 /* EGORefreshTableHeaderView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4AFB9B011AAC08C90015E273 /* JDPathView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AFB9B001AAC08C90015E273 /* JDPathView.m */; };
+		4AFB9B041AAC0ACE0015E273 /* YLLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AFB9B031AAC0ACE0015E273 /* YLLoadingView.m */; };
+		4AFB9B071AAC0EB30015E273 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AFB9B061AAC0EB30015E273 /* RootViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +39,14 @@
 		4AFB9AEA1AAC07B90015E273 /* JDRefreshTableHeaderViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JDRefreshTableHeaderViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AFB9AEF1AAC07B90015E273 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4AFB9AF01AAC07B90015E273 /* JDRefreshTableHeaderViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDRefreshTableHeaderViewTests.m; sourceTree = "<group>"; };
+		4AFB9AFC1AAC080E0015E273 /* EGORefreshTableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGORefreshTableHeaderView.h; sourceTree = "<group>"; };
+		4AFB9AFD1AAC080E0015E273 /* EGORefreshTableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGORefreshTableHeaderView.m; sourceTree = "<group>"; };
+		4AFB9AFF1AAC08C90015E273 /* JDPathView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDPathView.h; sourceTree = "<group>"; };
+		4AFB9B001AAC08C90015E273 /* JDPathView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDPathView.m; sourceTree = "<group>"; };
+		4AFB9B021AAC0ACE0015E273 /* YLLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLLoadingView.h; sourceTree = "<group>"; };
+		4AFB9B031AAC0ACE0015E273 /* YLLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLLoadingView.m; sourceTree = "<group>"; };
+		4AFB9B051AAC0EB30015E273 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		4AFB9B061AAC0EB30015E273 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,8 @@
 		4AFB9ACE1AAC07B90015E273 = {
 			isa = PBXGroup;
 			children = (
+				4AFB9AFA1AAC080E0015E273 /* Classes */,
+				4AFB9AFB1AAC080E0015E273 /* RefreshTableHeaderView */,
 				4AFB9AD91AAC07B90015E273 /* JDRefreshTableHeaderView */,
 				4AFB9AED1AAC07B90015E273 /* JDRefreshTableHeaderViewTests */,
 				4AFB9AD81AAC07B90015E273 /* Products */,
@@ -109,6 +123,30 @@
 				4AFB9AEF1AAC07B90015E273 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4AFB9AFA1AAC080E0015E273 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				4AFB9AFF1AAC08C90015E273 /* JDPathView.h */,
+				4AFB9B001AAC08C90015E273 /* JDPathView.m */,
+				4AFB9B021AAC0ACE0015E273 /* YLLoadingView.h */,
+				4AFB9B031AAC0ACE0015E273 /* YLLoadingView.m */,
+				4AFB9B051AAC0EB30015E273 /* RootViewController.h */,
+				4AFB9B061AAC0EB30015E273 /* RootViewController.m */,
+			);
+			name = Classes;
+			path = JDRefreshTableHeaderView/Classes;
+			sourceTree = "<group>";
+		};
+		4AFB9AFB1AAC080E0015E273 /* RefreshTableHeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				4AFB9AFC1AAC080E0015E273 /* EGORefreshTableHeaderView.h */,
+				4AFB9AFD1AAC080E0015E273 /* EGORefreshTableHeaderView.m */,
+			);
+			name = RefreshTableHeaderView;
+			path = JDRefreshTableHeaderView/RefreshTableHeaderView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,6 +248,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AFB9AFE1AAC080E0015E273 /* EGORefreshTableHeaderView.m in Sources */,
+				4AFB9B011AAC08C90015E273 /* JDPathView.m in Sources */,
+				4AFB9B071AAC0EB30015E273 /* RootViewController.m in Sources */,
+				4AFB9B041AAC0ACE0015E273 /* YLLoadingView.m in Sources */,
 				4AFB9AE01AAC07B90015E273 /* AppDelegate.m in Sources */,
 				4AFB9ADD1AAC07B90015E273 /* main.m in Sources */,
 			);
@@ -328,6 +370,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = JDRefreshTableHeaderView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -338,6 +381,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = JDRefreshTableHeaderView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
